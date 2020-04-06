@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fm_principal</class>
+ <widget class="QMainWindow" name="Fm_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>837</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Fm_principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-image:url(:/imagens/cadeado/fundoprincipal.png);
+}
+#pushButton_2{
+	background:#248;
+    color:#fff;
+	font-size:25pt;
+	border:3px solid #fff;
+	border-radius:10px;
+	font-family: &quot;Vesta Night - Personal Use&quot;;
+}
+
+#pushButton_2:hover{
+	background:#dc143c;
+	color:#008;
+	font-size:25pt;
+	border:3px solid #008;
+	border-radius:10px;
+	font-family: &quot;Vesta Night - Personal Use&quot;;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_bloquear">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>bloq</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>231</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Nova Venda</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_nome">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>440</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>Sem colaborador</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>837</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGest_o">
+    <property name="title">
+     <string>Gestão</string>
+    </property>
+    <addaction name="actionEstoque"/>
+    <addaction name="actionColaboradores"/>
+    <addaction name="actionVendas"/>
+   </widget>
+   <widget class="QMenu" name="menuSistema">
+    <property name="title">
+     <string>Sistema</string>
+    </property>
+    <addaction name="actionSAIR"/>
+    <addaction name="separator"/>
+    <addaction name="actionSobre"/>
+   </widget>
+   <addaction name="menuGest_o"/>
+   <addaction name="menuSistema"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEstoque">
+   <property name="text">
+    <string>Estoque</string>
+   </property>
+  </action>
+  <action name="actionColaboradores">
+   <property name="text">
+    <string>Colaboradores</string>
+   </property>
+  </action>
+  <action name="actionVendas">
+   <property name="text">
+    <string>Vendas</string>
+   </property>
+  </action>
+  <action name="actionSAIR">
+   <property name="text">
+    <string>SAIR</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

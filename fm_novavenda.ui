@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fm_novavenda</class>
+ <widget class="QDialog" name="fm_novavenda">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>810</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-image:url(:/imagens/cadeado/fundo.png);
+}
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="txt_qtde">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>43</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_codproduto">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>43</y>
+     <width>241</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quantidade</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>143</x>
+     <y>44</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>20</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Código do Produto</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_listaprodutos">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>83</y>
+     <width>791</width>
+     <height>271</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>373</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Valor Total:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_totalvenda">
+   <property name="geometry">
+    <rect>
+     <x>91</x>
+     <y>373</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>R$</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_excluirproduto">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>401</y>
+     <width>120</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Excluir Produto</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_editarproduto">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>401</y>
+     <width>120</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Editar Produto</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_finalizarvenda">
+   <property name="geometry">
+    <rect>
+     <x>269</x>
+     <y>401</y>
+     <width>120</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDialog{
+	background-image:url(:/imagens/cadeado/fundo.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Finalizar Venda</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>40</y>
+     <width>120</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pesquisar Produto</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

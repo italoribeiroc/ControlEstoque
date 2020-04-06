@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fm_gestaoVendas</class>
+ <widget class="QDialog" name="fm_gestaoVendas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>837</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-image:url(:/imagens/cadeado/fundo.png);
+}
+QPushButton{
+	background:#248;
+    color:#fff;
+	border:3px solid #fff;
+	border-radius:10px;
+}
+
+QPushButton:hover{
+	background:#dc143c;
+	color:#008;
+	border:3px solid #008;
+	border-radius:10px;
+}</string>
+  </property>
+  <widget class="QDateEdit" name="de_dataini">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="de_datafim">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data Inicial</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Data Final</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_filtrar">
+   <property name="geometry">
+    <rect>
+     <x>307</x>
+     <y>27</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Filtrar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_relatorioPDF">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>480</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#fm_gestaoVendas{
+	background-image:url(:/imagens/cadeado/fundo.png);
+}</string>
+   </property>
+   <property name="text">
+    <string>Gerar Relatório PDF</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_listaVendas">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>65</y>
+     <width>791</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_listaProdutosVendas">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>226</y>
+     <width>791</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_mostrarTodasVendas">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>26</y>
+     <width>151</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mostrar todas vendas</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
